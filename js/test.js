@@ -4,8 +4,8 @@
 		var defaults = {
 				 'bannerNum' :2,
 				 'duration' :5000,
-				 'auto' :'on',
-				 'ball' :'off'
+				 'auto' :true,
+				 'ball' :true
 				 
 				 
 		};
@@ -16,10 +16,10 @@
 		var bannerLength=this.children('.banner_wrap').children('.banner').length;
 		
 		this.each(function(){
-			if(settings.auto=='on'){
+			if(settings.auto==true){
 				var refresh=setInterval(autoslide,settings.duration);
 			}
-			if(settings.ball=='on'){
+			if(settings.ball==true){
 
 				for(var i=0;i<bannerLength;i++){
 					$(this).children(".banner_point").append( "<li class='"+i+"'></li>" );
@@ -65,7 +65,7 @@
       			bannerNum=$(e.target).attr("class");
       			
       			ClocknMove(bannerNum);
-      			
+
   			});
   			function init(num){
     			now_width=$(window).width();
