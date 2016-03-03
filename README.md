@@ -27,8 +27,8 @@ add a `<li>`in your section
 $('#banner_section1').julio({
          'bannerNum' :2,
          'duration' :5000,
-         'auto' : 'on',
-         'ball' :'on'
+         'auto' : false,
+         'ball' : false
     });
 </script>    
 ```
