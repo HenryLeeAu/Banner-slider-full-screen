@@ -11,22 +11,21 @@
 		};
 		var settings=$.extend({},defaults,options);
 		var bannerNum=settings.bannerNum;
-		var now_width;
-		var that=this;
-		var bannerLength=this.children('.banner_wrap').children('.banner').length;
+		var now_width; // put the current width
+		var that=this; 
+		var bannerLength=this.children('.banner_wrap').children('.banner').length;// get the length of this slide
 		
 		this.each(function(){
 			if(settings.auto==true){
-				var refresh=setInterval(autoslide,settings.duration);
+				var refresh=setInterval(autoslide,settings.duration); //count the duration
 			}
 			if(settings.ball==true){
-
 				for(var i=0;i<bannerLength;i++){
-					$(this).children(".banner_point").append( "<li class='"+i+"'></li>" );
+					$(this).children(".banner_point").append( "<li class='"+i+"'></li>" );//add the shortcut
 		  		}
 		  	}
 		  	
-			init(bannerNum);
+			init(bannerNum);//  initial status
 
   			function bannerMove(num){
   				$(that).children('.banner_wrap').animate({marginLeft:$(window).width()*-num+"px"}, 1000, ButtonStatus());
@@ -35,7 +34,7 @@
         		init(bannerNum);
   			});
     		
-		 	function ButtonStatus(){
+		 	function ButtonStatus(){//detect the status of last & next button
       			$(that).children(".arrow_l").removeClass('hidden');
       			$(that).children(".arrow_r").removeClass('hidden');
       			if(bannerNum==0){
