@@ -1,0 +1,71 @@
+.arrow_l {
+  background-color: #272727;
+  background-image: url(../images/btn_keyimg_last_normal.png);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  width: 45px;
+  height: 66px;
+  position: absolute;
+  z-index: 15;
+  top: 50%;
+  cursor: pointer;
+}
+
+/* line 113, ../sass/site.scss */
+.arrow_l:hover {
+  background-color: #2bb8c9;
+}
+
+/* line 116, ../sass/site.scss */
+.arrow_r {
+  background-color: #272727;
+  background-image: url(../images/btn_keyimg_next_normal.png);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  width: 45px;
+  height: 66px;
+  position: absolute;
+  z-index: 13;
+  right: 0;
+  top: 50%;
+  cursor: pointer;
+}
+
+/* line 130, ../sass/site.scss */
+.arrow_r:hover {
+  background-color: #2bb8c9;
+}
+
+.banner {
+  float: left;
+  height: 100%;
+}
+
+#banner_section1,#banner_section2{
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.hidden{
+  display:none;
+}
+#banner_section1 .banner_point li, #banner_section2 .banner_point li {
+  float: left;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  background: #fc675c;
+  margin: 10px;
+  
+}
+.banner_point{
+  
+ position : absolute;
+
+  position: absolute;
+     left: 50%;
+   bottom:10px;
+   transform: translate(-50%,0);
+
+
+}
