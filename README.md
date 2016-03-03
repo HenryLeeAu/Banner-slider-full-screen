@@ -21,7 +21,7 @@ add a `<li>`in your section
     </li>
 </ul>
 ```
-###Customlize
+###customize
 ```html
 <script type="text/javascript">
 $('#banner_section1').julio({
