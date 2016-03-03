@@ -2,9 +2,11 @@
 
 How to use?
 --------------------------------------
-- **Add banner*
 
-add a <li class='banner'></li> in your section
+
+###Add banners
+
+add a `<li>`in your section
 
 ```html
 <ul class='banner_wrap' >
